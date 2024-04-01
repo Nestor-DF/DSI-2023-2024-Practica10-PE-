@@ -9,7 +9,8 @@
     "doc": "typedoc",
     "test": "mocha",
     "coverage": "c8 npm test && c8 report --reporter=lcov",
-    "ts": "rm -rf dist/ && tsc"
+    "ts": "rm -rf dist/ && tsc",
+    "git": "npm run doc && npm run coverage && git pull; git add .; git commit -m \".\"; git push;"
   },
   "keywords": [],
   "author": "",
